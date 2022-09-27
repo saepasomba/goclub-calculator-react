@@ -1,6 +1,4 @@
-$color-green: #00AA13;
-$color-purple: #93328E;
-$color-black: #000000;
+@import '../variables';
 
 .container {
   width: 80%;
@@ -19,4 +17,12 @@ body {
 
 .container-header {
   text-align: center;
+}
+
+.temp-container {
+  margin-top: 5rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
 }
