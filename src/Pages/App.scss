@@ -1,0 +1,22 @@
+$color-green: #00AA13;
+$color-purple: #93328E;
+$color-black: #000000;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+span.green {color: $color-green;}
+span.purple {color: $color-purple;}
+
+body {
+  color: $color-black;
+  font-size: 1.3rem;
+}
+
+// END of Default CSS
+
+.container-header {
+  text-align: center;
+}
