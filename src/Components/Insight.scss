@@ -1,0 +1,33 @@
+.container-insight {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.insight-highlight {
+    font-weight: bold;
+}
+
+.insight-subtext {
+    font-size: 1rem;
+}
+
+.estimate-spendings {
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+    justify-items: center;
+    .estimate-group {
+        margin-bottom: 2rem;
+        p {
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        ul {
+            list-style: none;
+        }
+    }
+}

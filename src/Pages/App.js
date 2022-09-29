@@ -4,6 +4,7 @@ import Header from '../Components/Header';
 import ProgressBar from '../Components/ProgressBar';
 import CustomTextField from '../Components/CustomTextField';
 import { useState } from 'react';
+import Insight from '../Components/Insight';
 
 function App() {
   const [userExp, setUserExp] = useState(0);
@@ -13,7 +14,7 @@ function App() {
 
   const onChange = (event) => {
     let value = event.target.value
-    setUserExp(userExp)
+    setUserExp(Number(value))
     setPercentage((value/6000*100).toFixed(2))
     console.log(Number(value))
     if (Number(value) >= 6000) {
@@ -38,6 +39,7 @@ function App() {
       <div className={`container tier-container ${tierColor}`}>
         {tier}
       </div>
+      <Insight currentExp={userExp} />
       <div className='container textfield-container'>
         <CustomTextField label='Current exp' onChange={onChange} />
       </div>
