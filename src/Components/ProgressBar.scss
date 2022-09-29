@@ -1,23 +1,45 @@
 @import '../variables';
 
 .progress {
-    margin: 1.5rem 0;
+    height: 0.7rem;
+    margin: 1.5rem 0 0.5rem;
 }
 
 .container-progress {
     position: relative;
-    width: 50%;
+    height: 100%;
+    width: 70%;
 }
 
 .progress-bar {
     position: absolute;
-    height: 0.7rem;
-    border-radius: 50px;
+    height: 100%;
+    transition: 500ms ease-in-out;
 }
 
 .progress-bar-bg {
+    display: relative;
     width: 100%;
-    background-color: black;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+
+    .tier {
+        width: 1.5px;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        transform: translate(-100%, 0);
+    }
+
+    .tier-bos {
+        position: absolute;
+        left: 3.33%;
+    }
+
+    .tier-juragan {
+        position: absolute;
+        left: 25%;
+    }
 }
 
 .progress-indicator {
