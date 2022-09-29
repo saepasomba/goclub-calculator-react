@@ -13,6 +13,15 @@
 body {
   color: $color-black;
   font-size: 1.3rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    .container {
+      width: 90%;
+    }
+  }
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 // END of Default CSS

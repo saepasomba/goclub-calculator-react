@@ -39,10 +39,10 @@ function App() {
       <div className={`container tier-container ${tierColor}`}>
         {tier}
       </div>
-      <Insight currentExp={userExp} />
       <div className='container textfield-container'>
         <CustomTextField label='Current exp' onChange={onChange} />
       </div>
+      <Insight currentExp={userExp} />
     </div>
   );
 }
